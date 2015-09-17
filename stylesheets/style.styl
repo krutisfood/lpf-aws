@@ -1,0 +1,203 @@
+@import bootstrap
+//@import 'nib'
+
+$lpfBlueGrey=#818FA1;
+$lpfLightBlueGrey=#C1CFF1;
+$lpfBrown=#461C1A;
+$lpfLightBrown=#A18F81;
+$lpfRoyalBlue=#003067;
+$lpfOrange=#f29247;
+
+body {
+  background-color:white;
+  margin: 0;
+}
+
+body,p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $lpfRoyalBlue;
+}
+
+.logo {
+  line-height:0.8em;
+  padding-top: 50px;
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    font-family: "Pinyon Script", cursive;
+    font-size:8em;
+    font-weight:normal;
+    color:$lpfRoyalBlue;
+    padding-bottom: 7px; 
+  }
+  .tag-line {
+    font-size:1.2em;
+    color:#003067;
+  }
+}
+
+.nav-links {
+  padding: 20px;
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $lpfRoyalBlue;
+    text-decoration:underline;
+    .facebook {
+      position: absolute;
+      margin-top: -7px;
+    }
+  }
+}
+
+.main-bar {
+  background-color: #261C1A;
+  background-image: -moz-radial-gradient(at center bottom , #461C1A 0px, #140C09 60%);
+  background-image: -webkit-radial-gradient(at center bottom , #461C1A 0px, #140C09 60%);
+  background-image: -ie-radial-gradient(at center bottom , #461C1A 0px, #140C09 60%);
+  background-image: -o-radial-gradient(at center bottom , #461C1A 0px, #140C09 60%);
+  background-image: radial-gradient(at center bottom , #461C1A 0px, #140C09 60%);
+  opacity: 90;
+  .banner-img {
+    position: absolute;
+    margin-top: -50px;
+  }
+  h1,h2,h3,h4 {
+    color: white; 
+  }
+  ul {
+    list-style: none;
+    li {
+      font-size: 2em;
+      line-height: 1.2em;
+      color: white;
+    }
+  }
+}
+
+.bar {
+  padding: 30px;
+  .bar-heading {
+    padding-bottom:15px;
+  }
+}
+
+.image-bar {
+  border-bottom: 1px solid $lpfLightBlueGrey;
+  .row {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  img {
+    display: inline;
+    float: left;
+    // TODO Ditto here!
+    height: 200px;
+    padding: 5px;
+  }
+  .row2 img {
+    padding-right: 3px;
+  }
+  .row3 img {
+    padding-right: 20px;
+  }
+}
+
+.why-lpf {
+  background-color: $lpfLightBrown;
+  color: white;
+}
+
+.what-lpf {
+  h2,h3 {
+    color: $lpfLightBlueGrey;
+  } 
+  .well {
+    background-color: $lpfBrown;
+  }
+  border-top: 1px solid $lpfBlueGrey;
+  ul {
+    li {
+      color:white;
+      line-height: 1.2em;
+    }
+  }
+}
+
+.contact-us {
+  padding: 40px;
+  //  background-image: radial-gradient(at center bottom , #461C1A 0px, #003067 60%);
+  background-color: $lpfBlueGrey;
+  background-image: -webkit-radial-gradient(at left bottom , $lpfBlueGrey 0px, #003067 60%);
+  background-image: -moz-radial-gradient(at left bottom , $lpfBlueGrey 0px, #003067 60%);
+  background-image: -ie-radial-gradient(at left bottom , $lpfBlueGrey 0px, #003067 60%);
+  background-image: -o-radial-gradient(at left bottom , $lpfBlueGrey 0px, #003067 60%);
+  background-image: radial-gradient(at left bottom , $lpfBlueGrey 0px, #003067 60%);
+  color: white;
+  h1,h2,h3,h4,h5 {
+    color: white;
+  }
+  .form-horizontal label {
+    color: white;
+  }
+}
+
+.footer {
+  padding:40px;
+  // TODO Remove this
+  height: 100px;
+  // background-color: grey;
+  color: white;
+  background-color: #140C09;
+  background-image: -webkit-linear-gradient(center bottom , #140C09 0px, #2E1513 40%);
+  background-image: -moz-linear-gradient(center bottom , #140C09 0px, #2E1513 40%);
+  background-image: -ie-linear-gradient(center bottom , #140C09 0px, #2E1513 40%);
+  background-image: -o-linear-gradient(center bottom , #140C09 0px, #2E1513 40%);
+  background-image: linear-gradient(bottom, #140C09 0px, #2E1513 40%);
+}
+
+
+/*  Bootstrap styling which went missing    */
+.form-horizontal {
+  .control-group {
+    margin-bottom: 20px;
+  }
+  .control-label {
+  }
+  .controls {
+    margin-left:150px;
+  }
+}
+
+.events-blog {
+  background-color: #261c1a;
+  ul {
+    list-style:none;
+  }
+  p, li {
+    color: white;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  h2 {
+    color:#93DB70;
+  }
+  h1 {
+    color:$lpfBlueGrey;
+  }
+}
+ 
+.find-us {
+  color: $lpfOrange;
+  font-weight: bold;
+}
+
+.sold-out {
+  color: red;
+  font-weight: bold;
+}
