@@ -5,8 +5,8 @@ $s3 = Aws::S3::Resource.new(region: 'ap-southeast-2')
 dirs = %w(images stylesheets)
 
 def upload_all_files_in(dir)
-  Dir.glob(File.join(Dir.home,"projects/lpf/public/#{dir}/*")) do |local_file|
-    base_name = File.basename local_file 
+  Dir.glob("./#{dir}/*") do |local_file|
+    base_name = File.basename local_file
     file_key = "#{dir}/#{base_name}"
     puts "Uploading #{local_file} as #{file_key}"
     file_obj = $s3.bucket('lpfchocolates.com.au').object(file_key)
@@ -16,7 +16,8 @@ def upload_all_files_in(dir)
   end
 end
 
+puts "#{Time.now} Starting"
 dirs.each do |dir|
   upload_all_files_in dir
 end
-
+puts "#{Time.now} Done"
